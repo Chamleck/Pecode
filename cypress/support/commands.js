@@ -1,13 +1,11 @@
-//команди аналогічні тасці яка знаходиться в сайпрес конфіг
-//об'являємо порожню змінну 
+//creating empty variable
 let id
-//в цій команді присвоюємо змінній id значання яке в аргументі команди
+//this command is to set value for id variable and returning id
 Cypress.Commands.add('setId',(value) =>{
  id = value
- //повертаємо id
  return id
 });
-//команда щоб дістати id просто повертає id який був наданий в попередній команді
+//this command is to extract id which was set bebore
 Cypress.Commands.add('getId',() =>{
  return id
 });
