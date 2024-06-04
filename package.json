@@ -1,7 +1,14 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "@faker-js/faker": "^7.5.0",
     "cypress": "^13.10.0",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "cy:run": "cypress run --env generateMochawesomeReport=true"
   }
 }
